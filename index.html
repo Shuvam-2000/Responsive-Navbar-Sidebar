@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="main">
+
+            <!-- navbar -->
+            <div class="nav">
+                <h1>Logo</h1>
+                <div class="nav-list">
+                    <li>Store</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Forum</li>
+                    <li>Account</li>
+                    <img onclick=showSidebar() src="images/menu-line.png" alt="">
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div class="side">
+                <img onclick=hideSidebar() src="images/close-button.png" alt="">
+                <div class="side-list">
+                    <li>Store</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Forum</li>
+                    <li>Account</li>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        
+        // showing the sidebar
+        function showSidebar(){
+            const sidebar = document.querySelector('.side')
+            sidebar.style.display = 'flex'
+        }
+
+
+        // hiding the sidebar
+        function hideSidebar(){
+            const hidesidebar = document.querySelector('.side')
+            hidesidebar.style.display = 'none'
+        }
+
+
+        </script>
+
+    </body>
+</html>
